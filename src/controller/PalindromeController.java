@@ -21,6 +21,8 @@ public class PalindromeController extends HttpServlet {
 
         PrintWriter writer = response.getWriter();
 
+        writer.println("Text: " + text + "<br/>");
+
         writer.println("All characteres: " + text.length() + "<br/>");
 
         writer.println("All chahracters without space: " + text.replaceAll(" ", "")
